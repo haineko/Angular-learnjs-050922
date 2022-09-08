@@ -8,7 +8,8 @@
 		"build:prod": "ng build --configuration production",
 		"build:dev": "ng build --configuration development",
 		"test": "ng test",
-		"prettier:fix": "prettier --write .",
+		"prettier:fix:all": "npm run prettier:fix .",
+		"prettier:fix": "prettier --write",
 		"lint": "ng lint"
 	},
 	"private": true,
