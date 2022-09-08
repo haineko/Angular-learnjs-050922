@@ -1,3 +1,3 @@
 export interface ITest {
-    testName: string;
+	testName: string;
 }
