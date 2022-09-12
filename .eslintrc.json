@@ -8,11 +8,16 @@
 				"project": ["tsconfig.json"],
 				"createDefaultProgram": true
 			},
+      "plugins": ["prettier"],
 			"extends": [
 				"plugin:@angular-eslint/recommended",
 				"plugin:@angular-eslint/template/process-inline-templates"
 			],
 			"rules": {
+        "prettier/prettier": "error",
+        "no-var": "error",
+        "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+        "quotes": ["error", "single", { "allowTemplateLiterals": true }],
 				"@angular-eslint/directive-selector": [
 					"error",
 					{
